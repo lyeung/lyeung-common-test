@@ -16,11 +16,11 @@
  *
  */
 
-package org.lyeung.common.test;
+package com.github.lyeung.common.test;
 
 /**
  * Created by lyeung on 9/07/15.
  */
-public interface SlowTest {
+public interface QuickTest {
     // do-nothing
 }
