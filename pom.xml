@@ -10,8 +10,10 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <inceptionYear>2016</inceptionYear>
+
     <name>lyeung-common-test</name>
-    <url>https://github.com/lyeung/lyeung-common-test</url>
+    <url>https://github.com/lyeung</url>
 
     <licenses>
         <license>
@@ -48,6 +50,17 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+    
     <build>
         <plugins>
             <plugin>
