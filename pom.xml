@@ -10,10 +10,15 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <inceptionYear>2016</inceptionYear>
+    <name>LYeung Common Test</name>
+    <description>LYeung common test library shared between projects.</description>
+    <url>https://github.com/lyeung/lyeung-common-test</url>
+    <inceptionYear>2015</inceptionYear>
 
-    <name>lyeung-common-test</name>
-    <url>https://github.com/lyeung</url>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>4.12</junit.version>
+    </properties>
 
     <licenses>
         <license>
@@ -46,7 +51,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
         </dependency>
     </dependencies>
 
