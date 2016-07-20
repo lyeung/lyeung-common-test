@@ -111,7 +111,7 @@
                     <keepBranch>false</keepBranch>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <noTag>false</noTag>
-                    <allowUntracked>true</allowUntracked>
+                    <allowUntracked>false</allowUntracked>
                     <pullDevelop>true</pullDevelop>
                     <pullMaster>true</pullMaster>
                     <allowSnapshots>true</allowSnapshots>
