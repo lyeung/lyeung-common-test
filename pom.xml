@@ -103,10 +103,10 @@
                 <artifactId>jgitflow-maven-plugin</artifactId>
                 <version>1.0-m5.1</version>
                 <configuration>
-                    <pushReleases>true</pushReleases>
+                    <pushReleases>false</pushReleases>
                     <pushFeatures>true</pushFeatures>
                     <pullDevelop>true</pullDevelop>
-                    <pushHotfixes>true</pushHotfixes>
+                    <pushHotfixes>false</pushHotfixes>
                     <pullMaster>true</pullMaster>
                     <keepBranch>false</keepBranch>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
