@@ -35,8 +35,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:lyeung/lyeung-common-test.git</connection>
-        <developerConnection>scm:git:git@github.com:lyeung/lyeung-common-test.git</developerConnection>
+        <connection>scm:git:https://github.com/lyeung/lyeung-common-test.git</connection>
+        <developerConnection>scm:git:https://github.com/lyeung/lyeung-common-test.git</developerConnection>
         <url>https://github.com/lyeung/lyeung-common-test</url>
     </scm>
     <issueManagement>
