@@ -4,7 +4,7 @@
 
     <groupId>com.github.lyeung</groupId>
     <artifactId>lyeung-common-test</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
 
     <name>LYeung Common Test</name>
@@ -35,8 +35,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/lyeung/lyeung-common-test.git</connection>
-        <developerConnection>scm:git:https://github.com/lyeung/lyeung-common-test.git</developerConnection>
+        <connection>scm:git:ssh://git@github.com:lyeung/lyeung-common-test.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:lyeung/lyeung-common-test.git</developerConnection>
         <url>https://github.com/lyeung/lyeung-common-test</url>
     </scm>
     <issueManagement>
@@ -99,45 +99,28 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.3</version>
+                <groupId>external.atlassian.jgitflow</groupId>
+                <artifactId>jgitflow-maven-plugin</artifactId>
+                <version>1.0-m5.1</version>
                 <configuration>
-                    <providerImplementations>
-                        <git>jgit</git>
-                    </providerImplementations>
+                    <pushReleases>true</pushReleases>
+                    <pushFeatures>true</pushFeatures>
+                    <pullDevelop>true</pullDevelop>
+                    <pushHotfixes>true</pushHotfixes>
+                    <pullMaster>true</pullMaster>
+                    <keepBranch>false</keepBranch>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <noTag>false</noTag>
+                    <allowUntracked>false</allowUntracked>
+                    <pullDevelop>true</pullDevelop>
+                    <pullMaster>true</pullMaster>
+                    <allowSnapshots>true</allowSnapshots>
+                    <flowInitContext>
+                        <masterBranchName>master</masterBranchName>
+                        <developBranchName>develop</developBranchName>
+                    </flowInitContext>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.scm</groupId>
-                        <artifactId>maven-scm-provider-jgit</artifactId>
-                        <version>1.9.5</version>
-                    </dependency>
-                </dependencies>
             </plugin>
-            <!--<plugin>-->
-                <!--<groupId>external.atlassian.jgitflow</groupId>-->
-                <!--<artifactId>jgitflow-maven-plugin</artifactId>-->
-                <!--<version>1.0-m5.1</version>-->
-                <!--<configuration>-->
-                    <!--<pushReleases>true</pushReleases>-->
-                    <!--<pushFeatures>true</pushFeatures>-->
-                    <!--<pullDevelop>true</pullDevelop>-->
-                    <!--<pushHotfixes>true</pushHotfixes>-->
-                    <!--<pullMaster>true</pullMaster>-->
-                    <!--<keepBranch>false</keepBranch>-->
-                    <!--<autoVersionSubmodules>true</autoVersionSubmodules>-->
-                    <!--<noTag>false</noTag>-->
-                    <!--<allowUntracked>false</allowUntracked>-->
-                    <!--<pullDevelop>true</pullDevelop>-->
-                    <!--<pullMaster>true</pullMaster>-->
-                    <!--<allowSnapshots>true</allowSnapshots>-->
-                    <!--<flowInitContext>-->
-                        <!--<masterBranchName>master</masterBranchName>-->
-                        <!--<developBranchName>develop</developBranchName>-->
-                    <!--</flowInitContext>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
 
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
