@@ -98,29 +98,6 @@
                     </execution>
                 </executions>
             </plugin>
-<<<<<<< HEAD
-            <plugin>
-                <groupId>external.atlassian.jgitflow</groupId>
-                <artifactId>jgitflow-maven-plugin</artifactId>
-                <version>1.0-m5.1</version>
-                <configuration>
-                    <pushReleases>true</pushReleases>
-                    <pushFeatures>true</pushFeatures>
-                    <pullDevelop>true</pullDevelop>
-                    <pushHotfixes>true</pushHotfixes>
-                    <pullMaster>true</pullMaster>
-                    <keepBranch>false</keepBranch>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <noTag>false</noTag>
-                    <allowUntracked>false</allowUntracked>
-                    <pullDevelop>true</pullDevelop>
-                    <pullMaster>true</pullMaster>
-                    <allowSnapshots>true</allowSnapshots>
-                    <flowInitContext>
-                        <masterBranchName>master</masterBranchName>
-                        <developBranchName>develop</developBranchName>
-                    </flowInitContext>
-=======
 
             <plugin>
                 <groupId>com.amashchenko.maven.plugin</groupId>
@@ -128,7 +105,6 @@
                 <version>1.2.3</version>
                 <configuration>
                     <!-- optional configuration -->
->>>>>>> develop
                 </configuration>
             </plugin>
 
