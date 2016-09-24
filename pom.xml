@@ -4,7 +4,7 @@
 
     <groupId>com.github.lyeung</groupId>
     <artifactId>lyeung-common-test</artifactId>
-    <version>${buildName}</version>
+    <version>1.0.11</version>
     <packaging>jar</packaging>
 
     <name>LYeung Common Test</name>
@@ -14,7 +14,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <buildName>latest</buildName>
         <junit.version>4.12</junit.version>
     </properties>
 
@@ -65,7 +64,6 @@
     </distributionManagement>
     
     <build>
-        <finalName>${project.artifactId}-${buildName}.${project.packaging}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
