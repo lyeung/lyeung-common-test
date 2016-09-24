@@ -38,7 +38,7 @@
         <connection>scm:git:git://git@github.com:lyeung/lyeung-common-test.git</connection>
         <developerConnection>scm:git:git://git@github.com:lyeung/lyeung-common-test.git</developerConnection>
         <url>https://github.com/lyeung/lyeung-common-test</url>
-        <tag>${project.version}</tag>
+        <tag>@{project.version}</tag>
     </scm>
     <issueManagement>
         <system>GitHub</system>
