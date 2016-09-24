@@ -65,7 +65,7 @@
     </distributionManagement>
     
     <build>
-        <finalName>${artifactId}-${buildName}.${project.packaging}</finalName>
+        <finalName>${project.artifactId}-${buildName}.${project.packaging}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
